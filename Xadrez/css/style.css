@@ -1,0 +1,79 @@
+
+body {
+  background-color: none;
+  margin: 0%;
+  border: none;
+  outline: 0;
+  overflow: hidden; 
+}
+
+ div.container {
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(top, #088fad 20%, #00d5ff 100%);
+}
+
+div.titulo {   
+    background-color: blue;
+    text-align: center;  
+    position: relative;
+    height: 5%;
+}
+
+
+div.pecas{
+  width: 20%;
+  height: 100%; 
+  background-color: maroon;
+  float:left;
+  display:table;
+
+}
+
+
+img.peca{
+
+  height: 100%;  
+  width: 100%;
+  object-fit: contain;   
+  -webkit-user-drag: none; 
+
+}
+
+button.peca{
+  width: 100%;
+  height: 16.5%;
+  display:table-cell;  
+  user-select: none;
+
+}
+div.tabela {
+   
+
+    width: 30%;
+    height: 95%; 
+    background-color: blue;
+    float:right;
+   
+}
+
+div.jogadas{
+
+  width: 80%;
+  height: 100%; 
+  background-color:orangered;
+  float:left;
+  display:table;
+}
+
+div.tabuleiro {
+  float:left;
+  width: 70%;
+  height: 95%;
+  position: relative;
+  
+  background-image: url('imgs/Board.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  }.clean{clear:both;}
