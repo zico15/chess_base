@@ -1,24 +1,22 @@
 {
-  "name": "chessserverapi",
+  "name": "amozonas-human-care-e-protect",
   "version": "1.0.0",
-  "description": "chessserverapi",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joaoribeiro89/chessserverapi.git"
+    "url": "git+https://github.com/joaoribeiro89/amozonas-human-care-e-protect.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "João Ribeiro",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/joaoribeiro89/chessserverapi/issues"
+    "url": "https://github.com/joaoribeiro89/amozonas-human-care-e-protect/issues"
   },
-  "homepage": "https://github.com/joaoribeiro89/chessserverapi#readme",
+  "homepage": "https://github.com/joaoribeiro89/amozonas-human-care-e-protect#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "socket.io": "^4.0.1"
+    "express": "^4.17.1"
   }
 }
