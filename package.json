@@ -1,16 +1,16 @@
 {
-  "name": "amozonas-human-care-e-protect",
+  "name": "Chess",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node serve.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/joaoribeiro89/amozonas-human-care-e-protect.git"
   },
-  "author": "João Ribeiro",
+  "author": "Ezequiel Carlos dos Santos",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/joaoribeiro89/amozonas-human-care-e-protect/issues"
