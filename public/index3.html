@@ -1,0 +1,71 @@
+<html>
+    
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleTable.css">
+</head>
+
+<body>
+
+
+<div class="container">
+  <div  class="titulo" >
+
+    <button onclick="myFunction()">Click me</button>
+
+  </div> 
+  <div id="tabuleiro"  onclick="tabuleiro(this,event)"  class="tabuleiro" >
+  
+  </div>
+
+  <div  class="tabela">
+    <div class="pecas">
+      <button  class="peca" ><img id= "rei" class="peca" src="css/imgs/pecas/rei_7.png"></button>  
+      <button  class="peca" ><img id= "rainha"  class="peca" src="css/imgs/pecas/rainha_7.png"></button>  
+      <button  class="peca" ><img id= "torre"  class="peca" src="css/imgs/pecas/torre_7.png">  </button>  
+      <button  class="peca" ><img id= "bispo"  class="peca" src="css/imgs/pecas/bispo_7.png"></button>  
+      <button  class="peca" ><img id= "cavalho"  class="peca" src="css/imgs/pecas/cavalho_7.png"></button>  
+      <button  class="peca" ><img id= "peao"  class="peca" src="css/imgs/pecas/peao_7.png"></button>  
+            
+    </div>
+
+  <div  id="table-scroll" class="jogadas">
+    <p id="titulo"></p>
+    <table id="myTable" class="styled-table">
+      <thead>
+          <tr>
+              <th>Peça</th>
+              <th>Casa</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr class="active-row">
+              <td>Cavalo</td>
+              <td>B5</td>
+          </tr>
+          <tr class="active-row">
+              <td>Bispo</td>
+              <td>C8</td>
+          </tr>
+          <tr class="active-row">
+            <td>Rei</td>
+            <td>E2</td>
+        </tr>
+        
+      </tbody>
+  </table>
+  </div>
+  </div>
+  <div class="clean"></div>
+</div>
+
+
+<script src="TabelaController.js"></script>
+<script>
+
+
+
+
+</script>
+</body>
+</html>
