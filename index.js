@@ -1,6 +1,10 @@
 const express = require("express");
 const app = express();
 const data = require("./data.json");
+// passa o express para o http-server
+var http = require('http').Server(app);
+// passa o http-server par ao socketio
+var io = require('socket.io')(http);
 
 app.use(express.json());
 
@@ -46,3 +50,17 @@ app.delete("/clients/:id", function(req, res) {
 app.listen(process.env.PORT || 3000, function() {
   console.log("Server is running");
 });
+
+
+ 
+// cria uma rota para fornecer o arquivo index.html
+app.get('/', function(req, res){
+  res.sendFile(__dirname + '/index.html');
+});
+// sempre que o socketio receber uma conexão vai devoltar realizar o broadcast dela
+io.on('connection', function(socket){
+  socket.on('chat message', function(msg){
+    io.emit('chat message', msg);
+  });
+});
+ 
