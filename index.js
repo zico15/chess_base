@@ -19,7 +19,7 @@ let numUsers = 0;
 
 io.on('connection', (socket) => {
   let addedUser = false;
-
+  console.log('conectato');
   // when the client emits 'new message', this listens and executes
   socket.on('new message', (data) => {
     // we tell the client to execute 'new message'
