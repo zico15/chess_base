@@ -40,6 +40,7 @@
 
     document.getElementById("textarea").addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
+      console.log("sdfsdf");
     	socket.emit("send", document.getElementById("textarea").value);
     }
 });
