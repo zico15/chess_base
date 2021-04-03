@@ -2,9 +2,9 @@
   "name": "server-chess-api",
   "version": "1.0.0",
   "description": "server-chess-api",
-  "main": "index.js",
+  "main": "serve.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node serve.js"
   },
   "repository": {
     "type": "git",
