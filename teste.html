@@ -24,10 +24,31 @@
       
   </ol>
   <div id='bottom'></div>
-  <input class="textarea" type="text" placeholder="Type here!" id="textarea" />
+  <input id="textarea" class="textarea" type="text" placeholder="Type here!" id="textarea" />
 </div>
 
     <script src="node_modules/socket.io-client/dist/socket.io.js"></script>
+
+
+    <script>
+
+
+     var socket = io.connect("https://chessteste.herokuapp.com:300");
+    var ready = false;
+
+
+
+    document.getElementById("textarea").addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+    	socket.emit("send", document.getElementById("textarea").value);
+    }
+});
+
+
+    
+
+
+    </script>
 
 </body>
 </html>
